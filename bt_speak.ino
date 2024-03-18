@@ -3,6 +3,11 @@
 BluetoothA2DPSink a2dp_sink;
 
 void setup() {
+
+  //VCC 3.3v to 5v
+  //BCK D27
+  //LRC D26
+  //DIN D25
     i2s_pin_config_t my_pin_config = {
         .bck_io_num = 27,
         .ws_io_num = 26,
